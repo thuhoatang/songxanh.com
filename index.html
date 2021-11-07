@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header" class="header">
+        <!-- top navbar -->
+        <nav class="navbar-top">
+            <div class="container d-flex align-items-center p-0">
+                <ul class="nav-left d-flex align-items-center">
+                    <li class="nav-left-item nav-left-item--label">
+                        Sống xanh - Website Kids
+                    </li>
+                    <li class="nav-left-item d-flex align-items-center">
+                        <i class="nav-icon fas fa-globe-americas"></i>
+                        <span class="nav-left-item__country">songxanh.com</span>
+                        <span class="nav-left-item__country nav-left-item__country--phone">EN</span>
+                    </li>
+                </ul>
+
+                <ul class="nav-right d-flex align-items-center ml-auto">
+                    <li class="nav-right-item">
+                        <a href="#" class="nav-right-item__link">Tìm kiếm</a>
+                    </li>
+                    <li class="nav-right-item">
+                        <i class="nav-icon fas fa-search"></i>
+                    </li>
+                    <li class="nav-right-item">
+                        <a href="#" class="nav-right-item__link">
+                            <i class="nav-icon fas fa-shopping-cart"></i>
+                        </a>
+                        <span class="nav-right-item__icon"></span>
+                    </li>
+                    <li class="nav-right-item">
+                        <i class="nav-icon fas fa-user-circle"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- bottom navbar -->
+        <div class="navbar" id="navbar_menu">
+            <div class="subnav d-md-none d-sm-none d-none d-lg-block">
+                <span>&emsp;</span>
+                <span>&emsp;</span>
+                <span>&emsp;</span>
+                <span>&emsp;</span>
+                <span>&emsp;</span>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">Thông tin chung<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content" id="sub_menu_01">
+                    <div id="thongtinchung" class="container-fluid">
+                        <ul class="list-group mx-5">
+                            <li id="thungo" class="list-group-item  py-4"><span class="iconify" data-icon="simple-line-icons:envelope-letter" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Thư ngõ</span></li>
+                            <li class="list-group-item py-4"><span class="iconify mr-2" data-icon="fa-solid:user-tie" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Ban đại diện</span></li>
+                            <li class="list-group-item py-4"><span class="iconify" data-icon="heroicons-outline:user-group" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Ban cố vấn</span></li>
+                            <li class="list-group-item py-4"><span class="iconify" data-icon="fluent:contact-card-24-filled" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Thông tin liên hệ </span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">Mạng lưới xanh <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content" id="sub_menu_02">
+                <div id="mangluoixanh" class="container-fluid">
+                    <ul class="list-group mx-5">
+                        <li class="list-group-item py-4"><span class="iconify" data-icon="bx:bx-network-chart" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Thông tin mạng lưới</span></li>
+                        <li class="list-group-item py-4"><span class="iconify mr-2" data-icon="gis:globe-users" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Đăng ký tham gia</span></li>
+                        <li class="list-group-item py-4"><span class="iconify" data-icon="gis:poi-map" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Bản đồ mạng lưới</span></li>
+                        <li class="list-group-item py-4"><span class="iconify" data-icon="bi:phone-vibrate-fill" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Trao đổi nội bộ</span></li>
+                    </ul>
+                </div>
+              </div>
+            </div> 
+            <div class="subnav">
+              <button class="subnavbtn">Kết nối xanh <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content" id="sub_menu_03">
+                <div id="ketnoixanh" class="container-fluid">
+                    <ul class="list-group mx-5">
+                        <li id="ketnoixanh_02" class="list-group-item py-4"><span class="iconify" data-icon="fluent:channel-share-12-filled" style="color: #3a5; font-size: 30px;"></span><span class="title_name">San sẻ xanh</span>
+                            <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                            <!-- sub menu cho ketnoixanh -->
+                            <ul class="list-group  mt-1 pt-1" id="submenu_ketnoixanh_02">
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Đăng kí thông tin cho cây</span></li>
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Phân</span></li>
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Dụng cụ</span></li>
+    
+                            </ul>
+                        </li>
+                        <li id="ketnoixanh_03" class="list-group-item py-4"><span class="iconify" data-icon="emojione-monotone:waving-hand" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Đón nhận xanh</span>
+                            <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                            <ul class="list-group  mt-1 pt-1" id="submenu_ketnoixanh_03">
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Đăng kí nhận cây</span></li>
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Phân</span></li>
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Dụng cụ</span></li>
+    
+                            </ul>
+                        </li>
+                        <li id="ketnoixanh_04" class="list-group-item py-4"><span class="iconify" data-icon="fontelico:emo-happy" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Đồng hành xanh</span>
+                            <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                            <ul class="list-group  mt-1 pt-1" id="submenu_ketnoixanh_04">
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Thông tin cảm nhận về chương trình</span></li>
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Tự chia sẻ việc làm và chăm sóc cây</span></li>
+                            </ul></li>
+                        <li class="list-group-item py-4"><span class="iconify" data-icon="bi:phone-vibrate-fill" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Phản hồi xanh</span></li>
+                    </ul>
+                </div>
+              </div>
+            </div> 
+            <div class="subnav">
+              <button class="subnavbtn">Trải nghiệm xanh <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content" id="sub_menu_04">
+                <div id="trainghiemxanh" class="container-fluid">
+                    <ul class="list-group mx-5">
+                        <li id="trainghiemxanh_01" class="list-group-item py-4"><span class="iconify" data-icon="fluent:channel-share-12-filled" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Chương trình sắp đến</span>
+                            <!-- sub menu cho ketnoixanh -->
+                            <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                            <ul class="list-group  mt-1 pt-1" id="submenu_trainghiemxanh_01">
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Thông báo thông tin về chương trình trồng thực tế để mỗi người đăng kí</span></li>
+                                
+    
+                            </ul>
+                        </li>
+                        <li id="trainghiemxanh_02" class="list-group-item py-4"><span class="iconify" data-icon="emojione-monotone:waving-hand" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Chương trình đã qua</span>
+                            <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                            <ul class="list-group  mt-1 pt-1" id="submenu_trainghiemxanh_02">
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Bài viết</span></li>
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Thông tin</span></li>
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Hình ảnh chương trình</span></li>
+    
+                            </ul>
+                        </li>
+                        <li id="trainghiemxanh_03" class="list-group-item py-4"><span class="iconify" data-icon="fontelico:emo-happy" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Ý tưởng xanh</span>
+                            <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                            <ul class="list-group  mt-1 pt-1" id="submenu_trainghiemxanh_03">
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Nơi để các con chia sẻ </span></li>
+                                <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Thể hiện ý tưởng</span></li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item py-4"><span class="iconify" data-icon="bi:phone-vibrate-fill" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Thống kê xanh</span></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">Kỹ thuật xanh <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content" id="sub_menu_05">
+                    <div class="subnav-content">
+                        <div id="kythuatxanh" class="container-fluid">
+                            <ul class="list-group mx-5">
+                                <li id="kythuatxanh_01" class="list-group-item py-4"><span class="iconify" data-icon="fluent:channel-share-12-filled" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Kỹ thuật chọn giống</span>
+                                    <!-- sub menu cho ketnoixanh -->
+                                    <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                                    <ul class="list-group  mt-1 pt-1" id="submenu_kythuatxanh_01">
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Hướng dẫn kĩ thuật</span></li>
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Các bài viết đã đăng</span></li>
+            
+                                    </ul>
+                                </li>
+                                <li id="kythuatxanh_02" class="list-group-item py-4"><span class="iconify" data-icon="emojione-monotone:waving-hand" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Kỹ thuật làm đất</span>
+                                    <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                                    <ul class="list-group  mt-1 pt-1" id="submenu_kythuatxanh_02">
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Hướng dẫn kĩ thuật</span></li>
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Các bài viết đã đăng</span></li>
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Hình ảnh chương trình</span></li>
+            
+                                    </ul>
+                                </li>
+                                <li id="kythuatxanh_03" class="list-group-item py-4"><span class="iconify" data-icon="fontelico:emo-happy" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Kỹ thuật trồng</span>
+                                    <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                                    <ul class="list-group  mt-1 pt-1" id="submenu_kythuatxanh_03">
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Hướng dẫn kĩ thuật</span></li>
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Các bài viết đã đăngg</span></li>
+                                    </ul>
+                                </li>
+
+                                <li id="kythuatxanh_04" class="list-group-item py-4"><span class="iconify" data-icon="fontelico:emo-happy" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Kỹ thuật chăm sóc</span>
+                                    <span class="iconify mb-3 ml-2" data-icon="ls:dropdown" style="color: #3a5; font-size: 10px;"></span>
+                                    <ul class="list-group  mt-1 pt-1" id="submenu_kythuatxanh_04">
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Hướng dẫn kĩ thuật</span></li>
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Các bài viết đã đăng</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">Giải trí xanh <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content" id="sub_menu_06">
+                    <div class="subnav-content">
+                        <div id="giaitrixanh" class="container-fluid">
+                            <ul class="list-group mx-5">
+                                <li id="giaitrixanh_01" class="list-group-item py-4"><span class="iconify" data-icon="fluent:channel-share-12-filled" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Thư viện xanh</span>
+                                    <!-- sub menu cho ketnoixanh -->
+                                    <ul class="list-group  mt-1 pt-1" id="submenu_giaitrixanh_01">
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Đăng bài tranh vẽ   </span></li>
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Ảnh về thiên nhiên</span></li>
+                                        <li class="list-group-item border-0 py-4"><span class="title_name_submenu pl-5">Đa dạng sinh học</span></li>
+                                        
+            
+                                    </ul>
+                                </li>
+                                <li id="giaitrixanh_02" class="list-group-item py-4"><span class="iconify" data-icon="emojione-monotone:waving-hand" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Câu lạc bộ Thơ Xanh</span>
+                                    
+                                </li>
+                                <li id="giaitrixanh_03" class="list-group-item py-4"><span class="iconify" data-icon="fontelico:emo-happy" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Cảm nghĩ xanh</span>
+                                    
+                                </li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">Kỹ năng xanh <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content" id="sub_menu_07">
+                    <div class="subnav-content">
+                        <div class="subnav-content">
+                            <div id="kynangxanh" class="container-fluid">
+                                <ul class="list-group mx-5">
+                                    <li id="kynangxanh_01" class="list-group-item py-4"><span class="iconify" data-icon="fluent:channel-share-12-filled" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Khát vọng xanh</span>
+                                        <!-- sub menu cho ketnoixanh -->
+                                    </li>
+                                    <li id="kynangxanh_02" class="list-group-item py-4"><span class="iconify" data-icon="emojione-monotone:waving-hand" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Bác sĩ tâm lý xanh</span>
+                                        
+                                    </li>
+                                    <li id="kynangxanh_03" class="list-group-item py-4"><span class="iconify" data-icon="fontelico:emo-happy" style="color: #3a5; font-size: 30px;"></span><span class="title_name">Kỹ năng phòng chống bạo lực trẻ em</span>
+                                        
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+          
+        <!-- Button navbar -->
+       
+        <button onclick="openNav()" id="btn_bar"><i id="btn_bar_icon" class="fas fa-bars"></i></button>
+        <!-- navbar hide -->
+        <ul class="list-group py-2" id="listview-signIn-signUp">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="iconify" data-icon="eva:close-circle-fill" style="color: #0cc74a; font-size: 25px;"></span></a>
+            
+            <li class="list-group-item border-0 text-danger mt-2 text-center">Thông tin chung</li>
+            <li class="list-group-item border-0 text-danger  mt-2 text-center">Mạng lưới xanh</li>
+            <li class="list-group-item border-0 text-danger mt-2 text-center">Kết nối xanh</li>
+            <li class="list-group-item border-0 text-danger  mt-2 text-center">Trải nghiệm xanh</li>
+            <li class="list-group-item border-0 text-danger mt-2 text-center">Kỹ thuật xanh</li>
+            <li class="list-group-item border-0 text-danger  mt-2 text-center">Giải trí xanh</li>
+            <li class="list-group-item  border-0 text-danger mt-2 text-center">Kỹ năng xanh</li>
+
+        </ul>
+    </header>
+
+    <!-- header bottom content -->
+    <section class="header-content">
+        <!-- background -->
+        <div class="header-cover-background">
+            <div class="cover-background"></div>
+
+            <!-- cover shapes background -->
+            <div class="cover-shapes-background">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 820" class="injected-svg svg-inject">
+                    <path class="fill-cyan"
+                        d="M 153.37 455.293 L 143.264 444.989 C 142.269 443.976 142.269 442.371 143.264 441.358 L 153.37 431.055 C 154.364 430.042 155.938 430.042 156.932 431.055 L 167.038 441.358 C 168.032 442.371 168.032 443.976 167.038 444.989 L 156.932 455.293 C 156.02 456.306 154.364 456.306 153.37 455.293 Z"
+                        style=""></path>
+                    <circle class="fill-pink" cx="1184.025" cy="85.335" r="9.723" style=""></circle>
+                    <circle class="fill-yellow" stroke-width="3" stroke-miterlimit="10" cx="320.504" cy="209.51"
+                        r="12.587" style=""></circle>
+                    <path class="fill-blue"
+                        d="M 42.564 -16.417 C 43.206 -18.074 44.682 -19.262 46.438 -19.535 L 62.879 -22.089 C 64.634 -22.362 66.401 -21.677 67.515 -20.294 L 77.948 -7.333 C 79.062 -5.949 79.353 -4.076 78.712 -2.419 L 72.703 13.096 C 72.061 14.753 70.585 15.941 68.829 16.215 L 52.388 18.769 C 50.633 19.042 48.865 18.358 47.752 16.973 L 37.319 4.012 C 36.205 2.628 35.914 0.755 36.555 -0.902 L 42.564 -16.417 Z"
+                        style=""></path>
+                    <path class="fill-pink"
+                        d="M 1128.161 586.512 C 1128.462 585.735 1129.154 585.178 1129.977 585.05 L 1137.684 583.853 C 1138.506 583.725 1139.335 584.046 1139.857 584.695 L 1144.747 590.77 C 1145.269 591.419 1145.406 592.297 1145.105 593.073 L 1142.289 600.346 C 1141.988 601.123 1141.296 601.68 1140.473 601.808 L 1132.767 603.005 C 1131.944 603.133 1131.115 602.812 1130.593 602.163 L 1125.703 596.088 C 1125.181 595.439 1125.044 594.561 1125.345 593.785 L 1128.161 586.512 Z"
+                        style=""></path>
+                    <path class="fill-purple"
+                        d="M 109.272 171.631 C 109.643 170.672 110.497 169.986 111.512 169.828 L 121.017 168.352 C 122.032 168.193 123.054 168.59 123.698 169.389 L 129.729 176.883 C 130.373 177.683 130.542 178.766 130.171 179.723 L 126.697 188.693 C 126.326 189.651 125.473 190.339 124.458 190.497 L 114.952 191.973 C 113.937 192.131 112.916 191.736 112.272 190.935 L 106.24 183.442 C 105.596 182.641 105.428 181.559 105.798 180.601 L 109.272 171.631 Z"
+                        style=""></path>
+                    <path class="fill-purple"
+                        d="M 258.215 770.571 C 258.563 769.674 259.363 769.03 260.314 768.882 L 269.221 767.499 C 270.171 767.351 271.129 767.722 271.732 768.471 L 277.384 775.492 C 277.988 776.243 278.146 777.257 277.798 778.155 L 274.543 786.559 C 274.195 787.457 273.395 788.101 272.444 788.249 L 263.538 789.633 C 262.587 789.781 261.629 789.41 261.026 788.66 L 255.374 781.639 C 254.771 780.889 254.613 779.874 254.96 778.976 L 258.215 770.571 Z"
+                        style=""></path>
+                    <circle class="fill-cyan" stroke-width="3" stroke-miterlimit="10" cx="730.584" cy="767.881"
+                        r="9.997" style=""></circle>
+                    <path class="fill-purple"
+                        d="M 1390.234 263.204 C 1390.491 262.543 1391.08 262.067 1391.782 261.958 L 1398.352 260.938 C 1399.053 260.829 1399.759 261.103 1400.204 261.655 L 1404.373 266.834 C 1404.818 267.387 1404.934 268.136 1404.678 268.798 L 1402.277 274.997 C 1402.021 275.659 1401.43 276.134 1400.729 276.244 L 1394.16 277.265 C 1393.459 277.373 1392.752 277.1 1392.307 276.547 L 1388.138 271.368 C 1387.693 270.815 1387.577 270.066 1387.833 269.404 L 1390.234 263.204 Z"
+                        style=""></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- left content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6  col-md-12 col-sm-12 col-12">
+                    <div class="left-header-content" >
+                        <h2 class="title">
+                            <div class="title-large">Trải nghiệm xanh</div>
+                            <div class="title-small">Hãy cùng chia sẻ</div>
+                        </h2>
+                        <p class="description">
+                            “Sống xanh” được hiểu nôm na là lối sống lành mạnh, thân thiện với môi trường. Đối với trẻ em,
+                             tùy theo độ tuổi mà cha mẹ tìm hiểu và dạy cho con thói quen sống phù hợp, 
+                            tích cực, thân thiện với thiên nhiên và góp phần bảo vệ môi trường.
+                        </p>
+
+                        <a href="#" class="btn btn-primary btn-up d-inline-flex align-items-center">
+                            <span style="color: aliceblue;">Đăng ký ngay</span>
+                            <i class="fas fa-angle-right" style="color: aliceblue;"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline d-inline-flex align-items-center">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Đọc thêm...   </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-12 col-sm-12 col-12" style="position: relative; top: 100px;">
+                    <img src="https://cdni.iconscout.com/illustration/premium/thumb/people-watering-tree-4119224-3425143.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- main cards -->
+    <section class="container main-cards">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/tree-plantation-4364708-3625996.png" alt="">
+                    </div>
+                    <h3 class="card-title">Landing Pages</h3>
+                    <p class="card-description">Impress with these beautiful landing pages.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/tree-plantation-4364708-3625996.png" alt="">
+                    </div>
+                    <h3 class="card-title">Secondary Pages</h3>
+                    <p class="card-description">Awesome collection of pages for any scenario.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img">
+                       <img src="https://cdni.iconscout.com/illustration/premium/thumb/tree-plantation-4364708-3625996.png" alt="">
+                    </div>
+                    <h3 class="card-title">Authentication</h3>
+                    <p class="card-description">Provide users good looking forms that inspire trust.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img">
+                        
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/planting-trees-4453550-3692668.png" alt="">
+                    </div>
+                    <h3 class="card-title">Account Pages</h3>
+                    <p class="card-description">Profile and account managemend made cool.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/planting-trees-4453550-3692668.png" alt="">
+                    </div>
+                    <h3 class="card-title">Shop Pages</h3>
+                    <p class="card-description">Complete front-end flow for e-commerce website.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/planting-trees-4453550-3692668.png" alt="">
+                    </div>
+                    <h3 class="card-title">Utility Pages</h3>
+                    <p class="card-description">Error pages and everything else can be found here.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- intro -->
+    <section class="intro-container">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-lg-6">
+                    <div class="intro-img">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/people-doing-tree-plantation-4119221-3425140.png">
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex">
+                    <div class="intro">
+                        <h3 class="intro-title">Change the way you build wesites. Forever.</h3>
+                        <p class="intro-description">With Purpose you get components and examples, including tons of
+                            variables that will help you customize this theme with ease.</p>
+                        <a href="#" class="intro-btn" style="color: green;">Purchase now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="col-lg-5 d-flex">
+                    <div class="intro intro--left">
+                        <h3 class="intro-title">A complete solution for developers & designers</h3>
+                        <p class="intro-description">With Purpose you get components and examples, including tons of
+                            variables that will help you customize this theme with ease.</p>
+                        <ul class="intro-items d-flex flex-column">
+                            <li class="intro-item d-flex align-items-center">
+                                <i class="badge fas fa-thumbs-up"></i>
+                                <span>Perfect for modern startups</span>
+                            </li>
+                            <li class="intro-item d-flex align-items-center">
+                                <i class="badge fas fa-palette"></i>
+                                <span>Built with customization and ease-of-use at its core</span>
+                            </li>
+                            <li class="intro-item d-flex align-items-center">
+                                <i class="badge fas fa-cog"></i>
+                                <span>Quality design and thoughfully crafted code</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intro-img">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/kids-planting-tree-4423265-3679384.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- reviews -->
+    <section class="reviews">
+        <div class="reviews-background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 820">
+                <path class="fill-cyan"
+                    d="M 177.67 511.271 L 144.933 477.895 C 141.713 474.613 141.713 469.414 144.933 466.132 L 177.67 432.758 C 180.89 429.474 185.989 429.474 189.209 432.758 L 221.946 466.132 C 225.167 469.414 225.167 474.613 221.946 477.895 L 189.209 511.271 C 186.257 514.553 180.89 514.553 177.67 511.271 Z">
+                </path>
+                <circle class="fill-pink" cx="1209.162" cy="110.471" r="34.859"></circle>
+                <circle class="fill-yellow" stroke-width="3" stroke-miterlimit="10" cx="333.261" cy="122.266"
+                    r="25.344"></circle>
+                <path class="fill-blue"
+                    d="M 49.669 -9.998 C 51.03 -13.511 54.16 -16.03 57.882 -16.608 L 92.738 -22.023 C 96.459 -22.602 100.206 -21.149 102.568 -18.217 L 124.686 9.261 C 127.047 12.196 127.665 16.166 126.305 19.679 L 113.567 52.571 C 112.206 56.084 109.075 58.604 105.354 59.184 L 70.498 64.599 C 66.777 65.177 63.029 63.727 60.668 60.791 L 38.55 33.314 C 36.189 30.378 35.571 26.408 36.931 22.895 L 49.669 -9.998 Z">
+                </path>
+                <path class="fill-pink"
+                    d="M 1032.318 376.476 C 1033.264 374.034 1035.44 372.282 1038.028 371.88 L 1062.261 368.116 C 1064.848 367.713 1067.453 368.723 1069.095 370.762 L 1084.472 389.865 C 1086.114 391.906 1086.544 394.666 1085.598 397.108 L 1076.742 419.976 C 1075.796 422.418 1073.619 424.17 1071.032 424.574 L 1046.799 428.338 C 1044.212 428.74 1041.606 427.732 1039.965 425.691 L 1024.588 406.588 C 1022.946 404.547 1022.517 401.787 1023.462 399.344 L 1032.318 376.476 Z">
+                </path>
+                <path class="fill-purple"
+                    d="M 1396.93 665.688 C 1399.95 657.893 1406.894 652.305 1415.153 651.022 L 1492.489 639.008 C 1500.744 637.723 1509.057 640.947 1514.298 647.453 L 1563.372 708.418 C 1568.611 714.931 1569.981 723.739 1566.965 731.533 L 1538.703 804.512 C 1535.683 812.306 1528.736 817.897 1520.48 819.184 L 1443.144 831.199 C 1434.887 832.481 1426.573 829.264 1421.334 822.75 L 1372.26 761.786 C 1367.022 755.272 1365.65 746.463 1368.668 738.668 L 1396.93 665.688 Z">
+                </path>
+                <path class="fill-purple"
+                    d="M 264.129 775.914 C 265.075 773.472 267.251 771.72 269.839 771.318 L 294.072 767.554 C 296.659 767.151 299.264 768.161 300.906 770.2 L 316.283 789.303 C 317.925 791.344 318.355 794.104 317.409 796.546 L 308.553 819.414 C 307.607 821.856 305.43 823.608 302.843 824.012 L 278.61 827.776 C 276.023 828.178 273.417 827.17 271.776 825.129 L 256.399 806.026 C 254.757 803.985 254.328 801.225 255.273 798.782 L 264.129 775.914 Z">
+                </path>
+                <circle class="fill-cyan" stroke-width="3" stroke-miterlimit="10" cx="745.931" cy="783.228" r="25.344">
+                </circle>
+                <path class="fill-purple"
+                    d="M 929.895 57.225 C 930.389 55.951 931.524 55.036 932.875 54.826 L 945.523 52.862 C 946.873 52.652 948.232 53.179 949.089 54.243 L 957.115 64.213 C 957.972 65.278 958.196 66.719 957.702 67.993 L 953.08 79.928 C 952.587 81.203 951.45 82.117 950.1 82.328 L 937.453 84.293 C 936.103 84.502 934.742 83.976 933.886 82.911 L 925.86 72.941 C 925.004 71.876 924.78 70.435 925.273 69.16 L 929.895 57.225 Z">
+                </path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="reviews-paragraph">
+                <div class="badge">Build tools</div>
+                <h3 class="title">Built for awesomeness</h3>
+                <p class="description">We use the latest technologies and tools in order to create a better code that
+                    not only works great, but it is easy easy to work with too.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="reviews-card">
+                        <div class="d-flex align-items-center">
+                            <div class="reviews-card-badge primary">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h5 class="title">Created with the latest technologies</h5>
+                        </div>
+                        <p class="description">We use the latest technologies and tools in order to create a better code
+                            that not only works great, but it is easy easy to work with too.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="reviews-card">
+                        <div class="d-flex align-items-center">
+                            <div class="reviews-card-badge yellow">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h5 class="title">Built by developers for developers</h5>
+                        </div>
+                        <p class="description">You don't only need a theme, but also great tools in order to ease the
+                            process or building and customizing. And this is exactly what we offer you.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="reviews-card">
+                        <div class="d-flex align-items-center">
+                            <div class="reviews-card-badge blue">
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                            <h5 class="title">Made for great first impressions</h5>
+                        </div>
+                        <p class="description">is lighter and faster than most of the themes out there which means you
+                            get more for less. Check out the components and examples pages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-background">
+        </div>
+        <div class="container footer-content">
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="copyright">
+                        <a href="#" class="copyright-link">
+                            <img src="https://cdni.iconscout.com/illustration/premium/thumb/people-doing-tree-plantation-4119221-3425140.png" class="copyright-logo" style="position: relative; top: -50px;"></img>
+                        </a>
+                        <div class="copyright-description">
+                            “Sống xanh” được hiểu nôm na là lối sống lành mạnh, thân thiện với môi trường. Đối với trẻ em, 
+                            tùy theo độ tuổi mà cha mẹ tìm hiểu và dạy cho con thói quen sống phù hợp, tích cực, thân thiện với 
+                            thiên nhiên và góp phần bảo vệ môi trường..</div>
+                        <!-- <div class="copyright-date">© 2018-2019 <strong>Webpixels</strong>. All rights reserved.</div> -->
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" style="position: relative; top: 100px;">
+                    <div class="contacts">
+                       
+                        <ul class="contact">
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Profile</a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Settings</a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Billing</a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Notifications</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2"  style="position: relative; top: 100px;">
+                    <div class="contacts">
+                        
+                        <ul class="contact">
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Services</a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Contact</a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2"  style="position: relative; top: 100px;">
+                    <div class="contacts">
+                        <h6 class="label"><strong>Company</strong></h6>
+                        <ul class="contact">
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Terms</a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Privacy</a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container contact-options">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="copyright-date">© 2020-2021 <strong>Webpixels</strong>. All rights reserved.</div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <ul class="list d-flex align-items-center justify-content-end">
+                        <li class="item">
+                            <a href="#" class="item-link">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="https://github.com/minhhunghuynh1106" class="item-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+
+</body>
+
+</html>
